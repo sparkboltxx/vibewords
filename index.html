@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeWords - Thematic Vocabulary for Writers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>✨ VibeWords</h1>
+            <p class="tagline">Thematic vocabulary for fiction writers</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <label for="theme-select">SELECT A VIBE</label>
+                <select id="theme-select">
+                    <option value="">Choose a theme...</option>
+                    <option value="heist">🎭 Heist / Crime</option>
+                    <option value="romance">💕 Romance / Passion</option>
+                    <option value="horror">👻 Horror / Dread</option>
+                    <option value="scifi">🚀 Sci-Fi / Space</option>
+                    <option value="fantasy">⚔️ Fantasy / Magic</option>
+                    <option value="noir">🌃 Noir / Mystery</option>
+                    <option value="action">💥 Action / Combat</option>
+                    <option value="cozy">☕ Cozy / Comfort</option>
+                </select>
+                <button id="generate-btn" class="generate-btn">Generate Words</button>
+            </div>
+
+            <div id="results" class="results hidden">
+                <div class="word-category" id="actions-section">
+                    <h3>⚡ ACTIONS</h3>
+                    <div class="word-pills" id="actions"></div>
+                </div>
+                <div class="word-category" id="emotions-section">
+                    <h3>💭 EMOTIONS</h3>
+                    <div class="word-pills" id="emotions"></div>
+                </div>
+                <div class="word-category" id="objects-section">
+                    <h3>🔮 OBJECTS</h3>
+                    <div class="word-pills" id="objects"></div>
+                </div>
+                <div class="word-category" id="atmosphere-section">
+                    <h3>🌙 ATMOSPHERE</h3>
+                    <div class="word-pills" id="atmosphere"></div>
+                </div>
+                <div class="word-category" id="metaphors-section">
+                    <h3>✍️ METAPHORS</h3>
+                    <div class="word-pills" id="metaphors"></div>
+                </div>
+            </div>
+
+            <div id="empty-state" class="empty-state">
+                <p>Select a vibe and generate thematic words for your writing</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>Built for writers who need more than a thesaurus</p>
+            <p class="credits">Made with 🔥 by <a href="https://github.com/sparkboltxx" target="_blank">Spark</a></p>
+        </footer>
+    </div>
+
+    <script src="src/themes.js"></script>
+    <script src="src/app.js"></script>
+</body>
+</html>
